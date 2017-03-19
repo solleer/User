@@ -1,0 +1,8 @@
+{
+    "name": "solleer/user",
+    "license": "MIT",
+    "homepage": "https://github.com/solleer/User",
+    "autoload": {
+    	"classmap": ["src/"]
+    }
+}
