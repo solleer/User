@@ -4,5 +4,9 @@
     "homepage": "https://github.com/solleer/User",
     "autoload": {
     	"classmap": ["src/"]
+    },
+    "require" : {
+        "level-2/maphper" : "dev-master",
+        "respect/validation" : "1.1.10"
     }
 }
