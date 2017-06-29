@@ -1,5 +1,5 @@
 <?php
-namespace User\Model;
+namespace Solleer\User;
 
 class SigninStatus {
     public function setSigninID($id) {

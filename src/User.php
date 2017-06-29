@@ -1,6 +1,6 @@
 <?php
 
-namespace User\Model;
+namespace Solleer\User;
 
 interface User {
     public function save(array $data, $id = null);

@@ -5,7 +5,7 @@ use Respect\Validation\Rules\AllOf;
 abstract class UserTest extends PHPUnit_Framework_TestCase {
     abstract protected function getSampleUser($id = null): array;
 
-    abstract protected function getUser($storage): \User\Model\User;
+    abstract protected function getUser($storage): \Solleer\User\User;
 
     public function testSave() {
         $storage = new \ArrayObject();

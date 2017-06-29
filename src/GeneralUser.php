@@ -1,12 +1,12 @@
 <?php
-namespace User\Model;
+namespace Solleer\User;
 use Respect\Validation\Rules\AllOf as ValidationAllOf;
 class GeneralUser implements User {
     private $maphper;
     private $validator;
     private $userAttributes;
 
-    public function __construct(\Maphper\Maphper $maphper, ValidationAllOf $validator, $userAttributes = ['id']) {
+    public function __construct(\ArrayAccess $maphper, ValidationAllOf $validator, $userAttributes = ['id']) {
         $this->maphper = $maphper;
         $this->validator = $validator;
         $this->userAttributes = $userAttributes;

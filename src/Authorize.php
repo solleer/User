@@ -1,5 +1,5 @@
 <?php
-namespace User\Model;
+namespace Solleer\User;
 class Authorize {
     private $model;
     private $currentUser;
