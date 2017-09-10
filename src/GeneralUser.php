@@ -30,4 +30,9 @@ class GeneralUser implements User {
     public function getUser($selector) {
         return $this->maphper[$selector] ?? false;
     }
+
+    public function delete($selector) {
+        unset($this->maphper[$selector]);
+        return true;
+    }
 }

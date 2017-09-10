@@ -18,4 +18,10 @@ class CurrentUser {
     public function getCurrentUser() {
         return $this->user->getUser($this->status->getSigninID());
     }
+
+    public function delete() {
+        $deleted = $this->user->delete($this->status->getSigninID());
+        if ($deleted) $this->status->setSigninID(null);
+        return $deleted;
+    }
 }
