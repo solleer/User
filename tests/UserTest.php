@@ -33,4 +33,13 @@ abstract class UserTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals($this->getSampleUser(4), (array)$user->getUser(4));
     }
+
+    public function testDelete() {
+        $storage = new \ArrayObject([4 => $this->getSampleUser(4)]);
+        $user = $this->getUser($storage);
+
+        $user->delete(['id' => 4]);
+
+        $this->assertFalse(isset($storage[4]));
+    }
 }
