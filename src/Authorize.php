@@ -5,7 +5,7 @@ class Authorize {
     private $currentUser;
     private $functions = [];
     private $defaultFunctions = [
-        "user" => "\\User\\Model\\Authorize\\User"
+        "user" => "Solleer\\User\\Authorize\\User"
     ];
     private $id = false;
 
@@ -24,7 +24,7 @@ class Authorize {
             $this->id = false;
             return $result;
 		}
-		throw new \Exception("Method \\User\\Model\\Authorize::" . $name . " does not exist");
+		throw new \Exception("Method \\Solleer\\User\\Authorize::" . $name . " does not exist");
 	}
 
     public function id($id) {
