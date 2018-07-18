@@ -2,7 +2,7 @@
 use User\Model\{BasicUser, Security, Status};
 use Maphper\Maphper;
 use Respect\Validation\Rules\AllOf;
-abstract class UserTest extends PHPUnit_Framework_TestCase {
+abstract class UserTest extends PHPUnit\Framework\TestCase {
     abstract protected function getSampleUser($id = null): array;
 
     abstract protected function getUser($storage): \Solleer\User\User;
